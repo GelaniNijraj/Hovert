@@ -110,25 +110,11 @@ class CreateScene extends React.Component {
         <div id="download" className="modal">
           <div className="modal-content">
             <div className="row">
-              <div className="col s12">
-                <ul className="tabs">
-                  <li className="tab col s3"><a href="#test1">JSON</a></li>
-                  <li className="tab col s3"><a href="#test2">Test 2</a></li>
-                  <li className="tab col s3"><a href="#test3">Disabled Tab</a></li>
-                  <li className="tab col s3"><a href="#test4">Test 4</a></li>
-                </ul>
-              </div>
               <div id="test1" className="col s12">
-                <pre>{JSON.stringify(this.state.resume, null, 2)}</pre>
+                <h5>JSON Schema</h5>
+                <textarea style={{height: 200, fontFamily: "monospace"}}>{JSON.stringify(this.state.resume, null, 2)}</textarea>
               </div>
-              <div id="test2" className="col s12">Test 2</div>
-              <div id="test3" className="col s12">Test 3</div>
-              <div id="test4" className="col s12">Test 4</div>
             </div>
-          </div>
-
-          <div className="modal-footer">
-            <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
           </div>
         </div>
 
